@@ -35,8 +35,7 @@ refs.form.addEventListener('input', () => {
         .catch(({ position, delay }) => {
           Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
         })
-        .finally(() => console.log('Promise settlet'));
-        (delay += step);
+      FirstDelay += delayStep;
     }
   });
 });
